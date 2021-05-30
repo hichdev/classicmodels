@@ -15,19 +15,16 @@ $conn=mysqli_connect($servername,$username,$password,$dbname);
 
 $query=$conn->query("SELECT * FROM employees;");
 $result= $query->fetch_all();
-
 ?>
-
-<title>Classic Models</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+<title>Classic Models</title>
 </head>
 <body>
+<div class="container">
+<h1>Hicham Employees php site</h1>
 
-<h1>Dit is een test</h1>
 
-
-<table class="table">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">Nr. Werknemer</th>
@@ -52,9 +49,7 @@ $result= $query->fetch_all();
 </table>
 
 
-
-
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
-
