@@ -9,9 +9,7 @@ $username = "root";
 $password = "Hogent12345";
 $dbname = "classicmodels";
 
-// Create connection
 $conn=mysqli_connect($servername,$username,$password,$dbname);
-// Check connection
 
 $query=$conn->query("SELECT * FROM employees;");
 $result= $query->fetch_all();
